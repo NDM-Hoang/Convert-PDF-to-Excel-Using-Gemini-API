@@ -1,1 +1,1 @@
-# convert-pdf-to-excel-using-Gemini-API
+# Convert PDF file or image to excel using Gemini API

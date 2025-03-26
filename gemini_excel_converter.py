@@ -501,5 +501,5 @@ class GeminiExcelConverter:
 if __name__ == "__main__":
     root = tk.Tk()
     app = GeminiExcelConverter(root)
-    app.api_key.set("AIzaSyBXcrnMTgi1nSLhH9BWo_y-_4QvWPCqgqc")  # Thiết lập API key
+    app.api_key.set("")  # Thiết lập API key
     root.mainloop()

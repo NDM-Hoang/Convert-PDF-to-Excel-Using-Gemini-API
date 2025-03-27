@@ -1,80 +1,80 @@
 # Convert PDF file or image to excel using Gemini API
-📌 **Tổng quan**
+📌 **Overview**
 
-Ứng dụng này cho phép chuyển đổi tài liệu PDF/hình ảnh sang file Excel tự động bằng cách sử dụng Gemini API của Google. Người dùng có thể tương tác qua giao diện đồ họa đơn giản. **Phần mềm này được lập trình bằng AI**.
+This application allows you to automatically convert PDF documents/images to Excel files using Google's Gemini API. Users can interact through a simple graphical interface. **This software is programmed with AI**.
 
-![Demo Ứng dụng](https://github.com/user-attachments/assets/421dfb16-b899-4398-8c28-edad67acea39) 
+![Application Demo](https://github.com/user-attachments/assets/421dfb16-b899-4398-8c28-edad67acea39) 
 
-🚀 **Tính năng chính**
+🚀 **Key Features**
 
-- ✅ Chọn file PDF hoặc ảnh đầu vào
+- ✅ Select input PDF or image file
 
-- ✅ Chỉ định thư mục lưu file Excel
+- ✅ Specify Excel file save directory
 
-- ✅ Tương tác với Gemini API qua giao diện
+- ✅ Interact with Gemini API through interface
 
-- ✅ Tự động sinh code Python từ AI
+- ✅ Automatically generate Python code from AI
 
-- ✅ Xem trước và chỉnh sửa code
+- ✅ Preview and edit code
 
-- ✅ Thực thi code trực tiếp trong ứng dụng
+- ✅ Execute code directly in the application
 
-- ✅ Tự động mở file Excel sau khi tạo
+- ✅ Automatically open Excel file after creation
 
-⚙️ **Cài đặt**
+⚙️ **Installation**
 
-  Yêu cầu hệ thống
+  System Requirements
   
     Python 3.7+
     
-    Hệ điều hành: Windows/macOS/Linux
+    Operating System: Windows/macOS/Linux
   
-  Cài đặt thư viện
+  Install Libraries
   
     pip install -r requirements.txt
   
-  Nội dung file requirements.txt:
+  Contents of requirements.txt:
   
     tkinter
     openpyxl>=3.1.2
     requests>=2.31.0
     python-dotenv>=1.0.0
     Pillow>=10.0.0
-  🔑 **Cấu hình API**
+  🔑 **API Configuration**
   
-  1. Lấy API Key từ Google AI Studio
+  1. Get API Key from Google AI Studio
   
-  2. Nhập API Key vào ô tương ứng trong ứng dụng
+  2. Enter API Key in the corresponding field in the application
   
-  3. API Key sẽ được lưu tự động ở:
+  3. API Key will be automatically saved at:
   
-    Windows: C:\Users$$Tên_người_dùng]\.excel_converter\config.json
+    Windows: C:\Users\[Username]\.excel_converter\config.json
   
     macOS/Linux: ~/.excel_converter/config.json
 
-🖥️ **Cách sử dụng**
+🖥️ **How to Use**
 
-1. Khởi chạy ứng dụng:
+1. Launch the application:
 
        python gemini_excel_converter.py
   
-2. Thao tác với giao diện:
+2. Interface operations:
 
-  - Nhập API Key của bạn
+  - Enter your API Key
 
-  - Chọn file PDF/ảnh cần xử lý
+  - Select PDF/image file to process
 
-  - Chọn thư mục lưu file Excel
+  - Choose directory to save Excel file
 
-  - Nhập yêu cầu xử lý (ví dụ: "Giữ nguyên định dạng bảng")
+  - Enter processing requirements (example: "Maintain table formatting")
 
-  - Nhấn "Chạy Prompt" để sinh code
+  - Click "Run Prompt" to generate code
 
-  - Xem và kiểm tra code
+  - View and check code
 
-  - Nhấn "Chạy Code" để tạo file Excel
+  - Click "Run Code" to create Excel file
 
-  - File kết quả sẽ được lưu tại:
+  - The result file will be saved at:
 
 
-        [Thư_mục_đã_chọn]/[Tên_file_gốc].xlsx
+        [Selected_directory]/[Original_filename].xlsx

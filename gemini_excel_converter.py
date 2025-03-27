@@ -141,9 +141,8 @@ class GeminiExcelConverter:
         # Open Excel and Reset buttons
         self.open_excel_btn = ttk.Button(
             right_btn_frame,
-            text="Open Excel File", 
-            command=self._open_excel_file,
-            state=tk.DISABLED,
+            text="Open Folder", 
+            command=self._open_output_folder,
             width=15
         )
         self.open_excel_btn.pack(side=tk.RIGHT, padx=5, pady=2)
@@ -220,7 +219,6 @@ class GeminiExcelConverter:
             self.run_btn.config(state=tk.NORMAL)
             
             self.progress_var.set(100)
-            self.status_var.set("Code generated successfully. Check and click 'Run Code' to continue.")
             
             # Save API key
             self._save_api_key()
@@ -451,11 +449,11 @@ class GeminiExcelConverter:
             messagebox.showwarning("Warning", "Cannot create output folder")
             return False
     
-    def _open_excel_file(self):
-        if os.path.exists(self.excel_file_path):
-            webbrowser.open(self.excel_file_path)
+    def _open_output_folder(self):
+        if os.path.exists(self.output_folder.get()):
+            webbrowser.open(self.output_folder.get())
         else:
-            messagebox.showwarning("Warning", "Excel file not found")
+            messagebox.showwarning("Warning", "Output folder not found")
     
     def _save_api_key(self):
         try:

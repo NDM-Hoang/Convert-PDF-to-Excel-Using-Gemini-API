@@ -3,7 +3,7 @@
 
 This application allows you to automatically convert PDF documents/images to Excel files using Google's Gemini API. Users can interact through a simple graphical interface. **This software is programmed with AI**.
 
-![Application Demo](https://github.com/user-attachments/assets/421dfb16-b899-4398-8c28-edad67acea39) 
+![Application Demo](https://github.com/user-attachments/assets/9f34f6e1-e265-443c-92ad-38ca5054981d)
 
 🚀 **Key Features**
 
